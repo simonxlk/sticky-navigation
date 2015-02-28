@@ -5,14 +5,14 @@ A menu that sticks to the top of the page once you scroll down past certain poin
 
 This code uses the JQuery library, if you don't already have in your HTML you should include it.
 
-**prepare your HTML **
-first have a look at the [DEMO](http://simonxlk.github.io/sticky-navigation.html)
+###prepare your HTML
+First have a look at the [DEMO](http://simonxlk.github.io/sticky-navigation.html) to get an idea of what am talking about!
 
 In my example, the menu is an unordered list inside a div with an ID of; `#menu`, this div lies inside another div with an ID of `#menu-wrapper`.
 I also have a place holder called `<span id="menu-start">` this is used to measure how far from the top of the window the menu sits.
 
 
-Here a variable is declared and given a value which is; the distance between the top of the window and the menu place holder. 
+Below a variable is declared and given a value which is; the distance between the top of the window and the menu place holder. 
 A place holder is used because the menu will be taken out of the page flow, but we need to remember where it should be.
 ```
 $(document).ready(function() {
